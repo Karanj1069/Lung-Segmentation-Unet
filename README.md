@@ -1,6 +1,6 @@
 It appears that you have a comprehensive lung segmentation project structured into three main parts: training, model architecture, and evaluation. Below is a summary of each section:
 
-### 1. **Training (`train.py`):**
+### 1. **Training:**
 - **Environment Setup:**
   - Sets TensorFlow environment variables.
   - Imports necessary libraries.
@@ -22,14 +22,14 @@ It appears that you have a comprehensive lung segmentation project structured in
   - Defines callbacks (ModelCheckpoint, ReduceLROnPlateau, CSVLogger).
   - Trains the model on the dataset.
 
-### 2. **Model Architecture (`model.py`):**
+### 2. **Model Architecture:**
 - Defines U-Net architecture using TensorFlow/Keras.
 - Contains functions for convolutional blocks, encoder and decoder blocks, and the overall U-Net model.
 
-### 3. **Metrics (`metrics.py`):**
+### 3. **Metrics:**
 - Defines custom evaluation metrics for the model, including Intersection over Union (IoU), Dice coefficient, and Dice loss.
 
-### 4. **Evaluation (`eval.py`):**
+### 4. **Evaluation:**
 - Similar environment setup as in training.
 - Loads the trained model.
 - Reads the test dataset.
@@ -37,7 +37,7 @@ It appears that you have a comprehensive lung segmentation project structured in
 - Saves the original image, ground truth, and predicted mask side by side for evaluation.
 
 ### Note:
-- Ensure that the code is structured into separate files (`train.py`, `model.py`, `metrics.py`, `eval.py`) or adjust accordingly.
+- Ensure that the code is structured into single python notebook.
 - Some functions and imports related to model training and evaluation are commented out, and you might need to uncomment them based on your needs.
 
 Make sure you have the required dataset paths and file locations configured properly in your project directory.
